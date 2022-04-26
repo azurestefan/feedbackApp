@@ -52,11 +52,13 @@ function FeedbackForm() {
         addFeedback(newFeedback)
       }
 
-      setBtnDisabled(true) 
-      setRating(10)
+   
+      setBtnDisabled(true) // 👈  add this line to reset disabled
+      setRating(10) //👈 add this line to set rating back to 10
       setText('')
     }
   }
+
 
   return (
     <Card>
